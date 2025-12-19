@@ -1,0 +1,20 @@
+body {
+  font-family: sans-serif;
+}
+
+.box {
+  padding: 30px;
+  border: 2px solid black;
+}
+.grandparent {
+  background: #ffe4e1;
+}
+
+.parent {
+  background: #e0ffff;
+}
+
+.child {
+  background: #e6ffe6;
+  cursor: pointer;
+}
