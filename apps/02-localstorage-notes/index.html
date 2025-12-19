@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes-localStorage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <h1>Notes</h1>
+        <p class="subtitle">
+          Saved in your browser using <code>LocalStorage</code>
+        </p>
+      </header>
+
+      <section class="composer">
+        <input type="text" id="titleInput" placeholder="Title" maxlength="60" />
+        <textarea
+          id="contentInput"
+          placeholder="Write a note..."
+          rows="4"
+          maxlength="500"
+        ></textarea>
+        <div class="actions">
+          <button id="addBtn">Add Note</button>
+          <button id="clearAllBtn" class="danger">Clear All</button>
+        </div>
+        <p class="hint">Tip: Refresh the page — your notes stay.</p>
+      </section>
+
+      <section class="list">
+        <div class="listHeader">
+          <h2>Your notes</h2>
+          <span id="countBadge" class="badge">0</span>
+        </div>
+
+        <ul id="notesList" class="notesList"></ul>
+        <p id="emptyState" class="empty">No notes yet. Add one 👇</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

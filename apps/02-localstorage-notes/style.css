@@ -1,0 +1,150 @@
+:root {
+  --border: #e5e7eb;
+  --bg: #fafafa;
+  --text: #111827;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.app {
+  max-width: 780px;
+  margin: 40px auto;
+  padding: 0 16px 60px;
+}
+
+.header h1 {
+  margin: 0;
+}
+.subtitle {
+  margin: 6px 0 0;
+  color: #374151;
+}
+
+.composer,
+.list {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+textarea {
+  margin-top: 10px;
+  resize: vertical;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+button {
+  border: 1px solid var(--border);
+  background: #111827;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button.danger {
+  background: white;
+  color: #b91c1c;
+  border-color: #fca5a5;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.hint {
+  margin: 10px 0 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.listHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.badge {
+  background: #111827;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.notesList {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: grid;
+  gap: 10px;
+}
+
+.note {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  display: grid;
+  gap: 6px;
+}
+
+.noteTitle {
+  font-weight: 700;
+  margin: 0;
+}
+
+.noteMeta {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.noteContent {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.noteActions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.noteActions button {
+  background: white;
+  color: #111827;
+}
+
+.noteActions button.delete {
+  color: #b91c1c;
+  border-color: #fecaca;
+}
+
+.empty {
+  margin: 14px 0 0;
+  color: #6b7280;
+}
